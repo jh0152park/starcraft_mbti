@@ -41,7 +41,12 @@ export default function Question({ params }: { params: { id: string } }) {
 
                 <ProgressBar step={+questionId} />
 
-                <QuestionBoard step={+questionId} question="벌컨 쌉가능?" />
+                <QuestionBoard
+                    step={+questionId}
+                    question="벌컨 쌉가능?"
+                    answer1="P컨 H컨 다 가능"
+                    answer2="그냥 어택땅만 하는편이야"
+                />
 
                 <div className="w-[80%] max-w-[600px] flex items-start justify-between gap-5 mt-5">
                     <AnswerButton step={+questionId} title="(1)" type="T" />
