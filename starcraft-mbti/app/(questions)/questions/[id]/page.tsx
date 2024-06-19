@@ -44,8 +44,8 @@ export default function Question({ params }: { params: { id: string } }) {
                 <QuestionBoard step={+questionId} question="벌컨 쌉가능?" />
 
                 <div className="w-[80%] max-w-[600px] flex items-start justify-between gap-5 mt-5">
-                    <AnswerButton />
-                    <AnswerButton />
+                    <AnswerButton step={+questionId} title="(1)" type="T" />
+                    <AnswerButton step={+questionId} title="(2)" type="F" />
                 </div>
             </div>
         </div>
