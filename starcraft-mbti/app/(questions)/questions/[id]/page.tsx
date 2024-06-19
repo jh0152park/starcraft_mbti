@@ -1,4 +1,5 @@
 import NotFound from "@/app/not-found";
+import AnswerButton from "@/components/button/answer-button";
 import ProgressBar from "@/components/questions/progress-bar";
 import QuestionBoard from "@/components/questions/question-board";
 import Image from "next/image";
@@ -39,7 +40,13 @@ export default function Question({ params }: { params: { id: string } }) {
                 />
 
                 <ProgressBar step={+questionId} />
+
                 <QuestionBoard step={+questionId} question="벌컨 쌉가능?" />
+
+                <div className="w-[80%] max-w-[600px] flex items-start justify-between gap-5 mt-5">
+                    <AnswerButton />
+                    <AnswerButton />
+                </div>
             </div>
         </div>
     );
