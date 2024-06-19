@@ -1,5 +1,6 @@
 import NotFound from "@/app/not-found";
 import ProgressBar from "@/components/questions/progress-bar";
+import QuestionBoard from "@/components/questions/question-board";
 import Image from "next/image";
 
 function isValidId(id: string) {
@@ -29,7 +30,16 @@ export default function Question({ params }: { params: { id: string } }) {
                     className="-z-10"
                 />
 
+                <Image
+                    src="/resource/images/logo/logo.png"
+                    alt="Logo"
+                    width="350"
+                    height="100"
+                    className="absolute top-[5%]"
+                />
+
                 <ProgressBar step={+questionId} />
+                <QuestionBoard step={+questionId} question="벌컨 쌉가능?" />
             </div>
         </div>
     );

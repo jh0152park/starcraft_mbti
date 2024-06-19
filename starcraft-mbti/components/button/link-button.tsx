@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 interface ILinkButton {
@@ -23,30 +22,6 @@ export default function LinkButton({ title, path }: ILinkButton) {
             <span className="font-semibold text-md text-[#57c62e]">
                 {title}
             </span>
-
-            {/* <Image
-                src="/resource/images/accessories/media_border_top_left.png"
-                alt="media_border_top_left"
-                width="25"
-                height="20"
-                className="absolute -left-1 -top-1 "
-            />
-
-            <Image
-                src="/resource/images/accessories/media_border_top_right.png"
-                alt="media_border_top_right"
-                width="25"
-                height="20"
-                className="absolute -right-1 -top-1 "
-            />
-
-            <Image
-                src="/resource/images/accessories/media_border_bottom_right.png"
-                alt="media_border_bottom_right"
-                width="25"
-                height="20"
-                className="absolute -right-1 -bottom-1 "
-            /> */}
         </div>
     );
 }
