@@ -5,4 +5,6 @@
 # Resources
 
 -   Logo: [wikipedia](https://en.wikipedia.org/wiki/File:StarCraft_Logo.png)
--   Background Image: [Blizzard Starcraft Remaster](https://starcraft.blizzard.com/ko-kr/)
+-   Favicon: [Blizzard Game Press Center](https://blizzard.gamespress.com/ko/starcraft)
+-   Background Images: [Blizzard Starcraft Remaster](https://starcraft.blizzard.com/ko-kr/)
+-   Accessories Images: [Blizzard Starcraft Remaster](https://starcraft.blizzard.com/ko-kr/)
