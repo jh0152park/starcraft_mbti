@@ -1,4 +1,6 @@
 import NotFound from "@/app/not-found";
+import ProgressBar from "@/components/questions/progress-bar";
+import Image from "next/image";
 
 function isValidId(id: string) {
     let validIds = [];
@@ -17,5 +19,18 @@ export default function Question({ params }: { params: { id: string } }) {
         return <NotFound />;
     }
 
-    return <span>{params.id} page</span>;
+    return (
+        <div className="flex items-center justify-center w-full h-screen ">
+            <div className=" max-w-[2600px] w-full h-screen relative flex flex-col items-center justify-center ">
+                <Image
+                    fill
+                    src="/resource/images/background/question_background.png"
+                    alt="Question-Background-Image"
+                    className="-z-10"
+                />
+
+                <ProgressBar step={1} />
+            </div>
+        </div>
+    );
 }
