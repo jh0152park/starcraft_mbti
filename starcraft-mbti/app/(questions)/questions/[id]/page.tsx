@@ -29,7 +29,7 @@ export default function Question({ params }: { params: { id: string } }) {
                     className="-z-10"
                 />
 
-                <ProgressBar step={1} />
+                <ProgressBar step={+questionId} />
             </div>
         </div>
     );
