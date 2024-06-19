@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "Starcraft Unit MBTI",
     description: "Guess who has same MBTI as me!!?",
+    icons: {
+        icon: "/resource/images/logo/favicon.ico",
+    },
 };
 
 export default function RootLayout({
