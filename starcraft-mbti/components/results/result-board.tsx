@@ -3,6 +3,7 @@ import ResultTitle from "./result-title";
 import ResultPhoto from "./result-photo";
 import ResultExplain from "./result-explain";
 import ResultCombination from "./result-combination";
+import ResultHomeButton from "../button/result-home-button";
 
 export default function ResultBoard({ mbti }: { mbti: string }) {
     return (
@@ -48,9 +49,17 @@ export default function ResultBoard({ mbti }: { mbti: string }) {
             </div> */}
 
             <ResultTitle mbti={mbti} />
+
             <ResultPhoto mbti={mbti} />
+
             <ResultExplain mbti={mbti} />
+
             <ResultCombination mbti={mbti} />
+
+            <div className="w-full flex items-center justify-center gap-2 px-3 absolute bottom-3">
+                <ResultHomeButton />
+                <ResultHomeButton />
+            </div>
         </div>
     );
 }
