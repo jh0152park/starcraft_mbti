@@ -24,7 +24,7 @@ export default function AnswerButton({ step, type, title }: IAnswerButton) {
             // Aint completed all mbti questions
             // Must replace to some special page
             if ((MBTIAnswer + type).length < 20) {
-                router.replace("/12331");
+                router.replace("/wroung-result");
             }
             // Completed all mbti questions
             // Have to compute MBTI result first
