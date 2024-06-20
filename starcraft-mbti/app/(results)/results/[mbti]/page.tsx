@@ -10,7 +10,22 @@ export default function MBTIResult({ params }: { params: { mbti: string } }) {
     }
 
     return (
-        <>
+        <div className="flex items-center justify-center w-full h-screen ">
+            <div className=" max-w-[2600px] w-full h-screen relative flex flex-col items-center justify-center ">
+                <Image
+                    fill
+                    src="/resource/images/background/outro_background.png"
+                    alt="Outro-Background-Image"
+                    className="-z-10"
+                />
+            </div>
+        </div>
+    );
+}
+
+/*
+
+<>
             {Object.keys(MBTIs).includes(mbti) && (
                 <div className="flex">
                     {MBTIs[mbti].map((char) => (
@@ -25,5 +40,5 @@ export default function MBTIResult({ params }: { params: { mbti: string } }) {
                 </div>
             )}
         </>
-    );
-}
+        
+*/
