@@ -11,7 +11,7 @@ export default function ResultPhoto({ mbti }: { mbti: string }) {
                     key={char}
                     className="flex flex-col items-center justify-center gap-2 "
                 >
-                    <div className=" size-36 aspect-square relative rounded-full overflow-hidden">
+                    <div className=" size-20 sm:size-28 md:size-32 aspect-square relative rounded-full overflow-hidden">
                         <Image
                             fill
                             src={`/resource/images/characters/${char}.png`}
@@ -19,7 +19,9 @@ export default function ResultPhoto({ mbti }: { mbti: string }) {
                             className="object-cover"
                         />
                     </div>
-                    <span className="font-bold">{char}</span>
+                    <span className="font-bold text-[13px] sm:text-lg">
+                        {char}
+                    </span>
                 </div>
             ))}
         </div>
