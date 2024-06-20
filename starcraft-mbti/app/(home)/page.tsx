@@ -1,5 +1,5 @@
-import LinkButton from "@/components/button/link-button";
 import Image from "next/image";
+import LinkButton from "@/components/button/link-button";
 
 export default function Home() {
     return (
@@ -10,6 +10,7 @@ export default function Home() {
                     src="/resource/images/background/intro_background.png"
                     alt="Intro-Background-Image"
                     className="-z-10"
+                    quality={75}
                 />
 
                 <Image

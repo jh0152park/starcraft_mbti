@@ -20,6 +20,7 @@ export default function MBTIResult({ params }: { params: { mbti: string } }) {
                     src="/resource/images/background/outro_background.png"
                     alt="Outro-Background-Image"
                     className="-z-10"
+                    quality={75}
                 />
 
                 <ResultBoard mbti={mbti} />
