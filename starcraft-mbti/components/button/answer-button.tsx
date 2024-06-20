@@ -31,7 +31,7 @@ export default function AnswerButton({ step, type, title }: IAnswerButton) {
             // Then replace to each result page
             else {
                 const mbti = ComputeMBTI(MBTIAnswer + type);
-                router.replace(`results/${mbti}`);
+                router.replace(`/results/${mbti}`);
             }
         }
     }
