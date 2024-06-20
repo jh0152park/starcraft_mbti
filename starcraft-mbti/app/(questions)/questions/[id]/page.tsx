@@ -5,6 +5,8 @@ import QuestionBoard from "@/components/questions/question-board";
 import { MBTI_QUESTIONS } from "@/global/questions";
 import Image from "next/image";
 
+export const dynamicParams = true;
+
 function isValidId(id: string) {
     let validIds = [];
 
@@ -66,4 +68,16 @@ export default function Question({ params }: { params: { id: string } }) {
             </div>
         </div>
     );
+}
+
+export async function generateStaticParams() {
+    let questions = [];
+
+    for (let question = 1; question <= 20; question++) {
+        questions.push(question);
+    }
+
+    return questions.map((question) => ({
+        id: question + "",
+    }));
 }

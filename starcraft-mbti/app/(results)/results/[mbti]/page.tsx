@@ -3,6 +3,8 @@ import NotFound from "@/app/not-found";
 import { MBTIs } from "@/global/results";
 import ResultBoard from "@/components/results/result-board";
 
+export const dynamicParams = true;
+
 export default function MBTIResult({ params }: { params: { mbti: string } }) {
     const mbti = params.mbti.toUpperCase();
 
@@ -24,4 +26,10 @@ export default function MBTIResult({ params }: { params: { mbti: string } }) {
             </div>
         </div>
     );
+}
+
+export async function generateStaticParams() {
+    return Object.keys(MBTIs).map((mbti) => ({
+        mbti: mbti,
+    }));
 }
