@@ -14,7 +14,7 @@ export default function NotFound() {
 
                 <div className="flex flex-col items-center justify-center *:font-bold *:sm:text-4xl *:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-xl text-center gap-10">
                     <span>
-                        Private maggot. You didn't answer fo all questions.
+                        Private maggot. You didn't answer for all questions.
                     </span>
                     <span>Do it again from the beginning!!</span>
                 </div>
