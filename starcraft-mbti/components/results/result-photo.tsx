@@ -17,6 +17,7 @@ export default function ResultPhoto({ mbti }: { mbti: string }) {
                             src={`/resource/images/characters/${char}.png`}
                             alt={char}
                             className="object-cover"
+                            quality={50}
                         />
                     </div>
                     <span className="font-bold text-[13px] sm:text-lg">
