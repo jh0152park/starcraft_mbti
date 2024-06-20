@@ -34,6 +34,7 @@ export default function Question({ params }: { params: { id: string } }) {
                     src="/resource/images/background/question_background.png"
                     alt="Question-Background-Image"
                     className="-z-10"
+                    quality={75}
                 />
 
                 <Image
