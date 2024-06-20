@@ -1,9 +1,10 @@
 import Image from "next/image";
 import ResultTitle from "./result-title";
+import ResultPhoto from "./result-photo";
 
 export default function ResultBoard({ mbti }: { mbti: string }) {
     return (
-        <div className="w-[80%] max-w-[600px] h-[80%] bg-black bg-opacity-70 border-[3px] border-red-500 relative flex flex-col items-start justify-start  *:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+        <div className="w-[80%] max-w-[600px] h-[80%] bg-black bg-opacity-70 border-[3px] border-red-500 relative flex flex-col items-start justify-start  *:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] *:select-none">
             <Image
                 src="/resource/images/accessories/media_border_top_left.png"
                 alt="media_border_top_left"
@@ -45,6 +46,7 @@ export default function ResultBoard({ mbti }: { mbti: string }) {
             </div> */}
 
             <ResultTitle mbti={mbti} />
+            <ResultPhoto mbti={mbti} />
         </div>
     );
 }
