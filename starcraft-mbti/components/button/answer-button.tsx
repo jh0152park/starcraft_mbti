@@ -1,6 +1,7 @@
 "use client";
 
 import { mbtiAnswerState } from "@/global/project-common";
+import { ComputeMBTI } from "@/utils/mbti/compute-mbti";
 import { useRouter } from "next/navigation";
 import { useRecoilState } from "recoil";
 
@@ -20,8 +21,19 @@ export default function AnswerButton({ step, type, title }: IAnswerButton) {
         if (step < 20) {
             router.push(`/questions/${step + 1}`);
         } else {
-            // compute mbti result first
-            // then move to each mbti result page
+            // Aint completed all mbti questions
+            // Must replace to some special page
+            if ((MBTIAnswer + type).length < 20) {
+                router.replace("/12331");
+            }
+            // Completed all mbti questions
+            // Have to compute MBTI result first
+            // Then replace to each result page
+            else {
+                const mbti = ComputeMBTI(MBTIAnswer + type);
+                console.log(mbti);
+                router.replace("/");
+            }
         }
     }
 
