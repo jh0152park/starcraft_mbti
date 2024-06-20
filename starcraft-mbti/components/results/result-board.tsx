@@ -2,6 +2,7 @@ import Image from "next/image";
 import ResultTitle from "./result-title";
 import ResultPhoto from "./result-photo";
 import ResultExplain from "./result-explain";
+import ResultCombination from "./result-combination";
 
 export default function ResultBoard({ mbti }: { mbti: string }) {
     return (
@@ -49,6 +50,7 @@ export default function ResultBoard({ mbti }: { mbti: string }) {
             <ResultTitle mbti={mbti} />
             <ResultPhoto mbti={mbti} />
             <ResultExplain mbti={mbti} />
+            <ResultCombination mbti={mbti} />
         </div>
     );
 }
