@@ -17,7 +17,7 @@ export default function AnswerButton({ step, type, title }: IAnswerButton) {
     function onClick() {
         setMBTIAnswer(MBTIAnswer + type);
 
-        if (step < 19) {
+        if (step < 20) {
             router.push(`/questions/${step + 1}`);
         } else {
             // compute mbti result first

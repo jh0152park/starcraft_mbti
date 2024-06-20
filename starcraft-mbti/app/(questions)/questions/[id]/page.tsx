@@ -2,6 +2,7 @@ import NotFound from "@/app/not-found";
 import AnswerButton from "@/components/button/answer-button";
 import ProgressBar from "@/components/questions/progress-bar";
 import QuestionBoard from "@/components/questions/question-board";
+import { MBTI_QUESTIONS } from "@/global/questions";
 import Image from "next/image";
 
 function isValidId(id: string) {
@@ -20,6 +21,8 @@ export default function Question({ params }: { params: { id: string } }) {
     if (!isValidId(questionId)) {
         return <NotFound />;
     }
+
+    const mbtiQuestion = MBTI_QUESTIONS[+questionId];
 
     return (
         <div className="flex items-center justify-center w-full h-screen ">
@@ -43,14 +46,22 @@ export default function Question({ params }: { params: { id: string } }) {
 
                 <QuestionBoard
                     step={+questionId}
-                    question="벌컨 쌉가능?"
-                    answer1="P컨 H컨 다 가능"
-                    answer2="그냥 어택땅만 하는편이야"
+                    question={mbtiQuestion.question}
+                    answer1={mbtiQuestion.answer1.answer}
+                    answer2={mbtiQuestion.answer2.answer}
                 />
 
                 <div className="w-[80%] max-w-[600px] flex items-start justify-between gap-5 mt-5">
-                    <AnswerButton step={+questionId} title="(1)" type="T" />
-                    <AnswerButton step={+questionId} title="(2)" type="F" />
+                    <AnswerButton
+                        step={+questionId}
+                        title="(1)"
+                        type={mbtiQuestion.answer1.type}
+                    />
+                    <AnswerButton
+                        step={+questionId}
+                        title="(2)"
+                        type={mbtiQuestion.answer2.type}
+                    />
                 </div>
             </div>
         </div>

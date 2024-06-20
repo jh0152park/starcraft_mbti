@@ -47,13 +47,15 @@ export default function QuestionBoard({
                 className="absolute -right-2 -bottom-3 "
             />
 
-            <div className="flex flex-col *:font-semibold text-xl md:text-2xl gap-1">
+            <div className="flex flex-col *:font-semibold  ">
                 <span className=" font-bold text-2xl md:text-3xl">
                     Q. {step}
                 </span>
-                <span className="my-5">{question}</span>
-                <span>(1). {answer1}</span>
-                <span>(2). {answer2}</span>
+                <span className="my-5 text-xl md:text-2xl">{question}</span>
+                <span className="text-lg md:text-xl mt-5 mb-3">
+                    (1) {answer1}
+                </span>
+                <span className="text-lg md:text-xl">(2) {answer2}</span>
             </div>
         </div>
     );
