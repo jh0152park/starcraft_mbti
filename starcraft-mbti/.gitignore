@@ -2,6 +2,7 @@
 
 /global/questions.ts
 /global/results.ts
+/public/resource/...
 
 # dependencies
 /node_modules
