@@ -10,7 +10,8 @@ export default function NotFound() {
                     src="/resource/images/background/terran_background.png"
                     alt="Terran-Background-Image"
                     className="-z-10"
-                    quality={75}
+                    quality={30}
+                    priority={true}
                 />
 
                 <div className="flex flex-col items-center justify-center *:font-bold *:sm:text-4xl *:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-xl text-center gap-10">
