@@ -17,7 +17,7 @@ export default function ResultCombination({ mbti }: { mbti: string }) {
                         fill
                         src={`/resource/images/characters/${best}.png`}
                         alt={best}
-                        className="object-cover"
+                        className="object-cover rounded-full"
                         quality={10}
                         priority={true}
                     />
@@ -36,7 +36,7 @@ export default function ResultCombination({ mbti }: { mbti: string }) {
                         fill
                         src={`/resource/images/characters/${worst}.png`}
                         alt={worst}
-                        className="object-cover"
+                        className="object-cover rounded-full"
                         quality={10}
                         priority={true}
                     />

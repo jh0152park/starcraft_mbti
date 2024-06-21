@@ -16,7 +16,7 @@ export default function ResultPhoto({ mbti }: { mbti: string }) {
                             fill
                             src={`/resource/images/characters/${char}.png`}
                             alt={char}
-                            className="object-cover"
+                            className="object-cover rounded-full"
                             quality={10}
                             priority={true}
                         />
