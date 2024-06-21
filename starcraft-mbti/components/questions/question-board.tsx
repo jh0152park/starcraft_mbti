@@ -14,7 +14,7 @@ export default function QuestionBoard({
     answer2,
 }: IQuestionBoard) {
     return (
-        <div className="w-[80%] max-w-[600px] h-[70%] bg-black bg-opacity-70 border-[3px] border-red-500 relative flex flex-col items-start justify-start p-7 *:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+        <div className="w-[80%] max-w-[600px] h-[60%] bg-black bg-opacity-70 border-[3px] border-red-500 relative flex flex-col items-start justify-start p-7 *:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             <Image
                 src="/resource/images/accessories/media_border_top_left.png"
                 alt="media_border_top_left"

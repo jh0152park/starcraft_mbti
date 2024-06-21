@@ -48,7 +48,7 @@ export default function Question({ params }: { params: { id: string } }) {
                     priority={true}
                 />
 
-                <div className="w-full h-full flex flex-col items-center justify-center gap-5 mt-12">
+                <div className="w-full h-full flex flex-col items-center justify-center gap-5 mt-14">
                     <ProgressBar step={+questionId} />
                     <QuestionBoard
                         step={+questionId}
