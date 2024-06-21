@@ -18,7 +18,8 @@ export default function ResultCombination({ mbti }: { mbti: string }) {
                         src={`/resource/images/characters/${best}.png`}
                         alt={best}
                         className="object-cover"
-                        quality={50}
+                        quality={10}
+                        priority={true}
                     />
                 </div>
                 <span className="font-bold text-[13px] sm:text-lg">
@@ -36,7 +37,8 @@ export default function ResultCombination({ mbti }: { mbti: string }) {
                         src={`/resource/images/characters/${worst}.png`}
                         alt={worst}
                         className="object-cover"
-                        quality={50}
+                        quality={10}
+                        priority={true}
                     />
                 </div>
                 <span className="font-bold text-[13px] sm:text-lg">
