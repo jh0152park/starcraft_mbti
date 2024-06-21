@@ -41,14 +41,6 @@ export default function ResultBoard({ mbti }: { mbti: string }) {
                 className="absolute -right-2 -bottom-3 "
             />
 
-            {/* <div className="w-full h-[10px] relative mt-96">
-                <Image
-                    fill
-                    src="/resource/images/accessories/section_divider.png"
-                    alt="section_divider"
-                />
-            </div> */}
-
             <ResultTitle mbti={mbti} />
 
             <ResultPhoto mbti={mbti} />

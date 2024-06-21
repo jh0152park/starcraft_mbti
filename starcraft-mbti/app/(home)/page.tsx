@@ -10,7 +10,8 @@ export default function Home() {
                     src="/resource/images/background/intro_background.png"
                     alt="Intro-Background-Image"
                     className="-z-10"
-                    quality={75}
+                    quality={30}
+                    priority={true}
                 />
 
                 <Image
@@ -19,6 +20,8 @@ export default function Home() {
                     width="500"
                     height="100"
                     className="absolute top-1/4"
+                    quality={30}
+                    priority={true}
                 />
 
                 <div className="flex flex-col items-center justify-center gap-5 *:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
